@@ -1,27 +1,26 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
+import Card from "./Card.jsx"
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-            
-
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div class="container-fluid" style={{ maxWidth: "80rem" }}>
+			<div class="jumbotron jumbotron-fluid bg-light p-4" >
+				<div class="container">
+					<h1 class="display-4">A Warm Welcome</h1>
+					<p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam suscipit similique quaerat tempora excepturi laborum doloremque nihil quia possimus vitae, doloribus temporibus quos, est maiores hic a nobis sunt nesciunt!</p>
+				</div>
+				<a href="#" class="btn btn-primary my-3">
+                    Call to action!
+                </a>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-3 col-sm-6 col-12 mb-4"><Card /></div>
+				<div class="col-md-3 col-sm-6 col-12 mb-4"><Card /></div>
+				<div class="col-md-3 col-sm-6 col-12 mb-4"><Card /></div>
+				<div class="col-md-3 col-sm-6 col-12 mb-4"><Card /></div>
+			</div>
 		</div>
+		
 	);
 };
 
